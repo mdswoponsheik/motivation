@@ -12,7 +12,7 @@
             background-color: aqua;
             border-radius: 8px;
             height: 4rem;
-            font-size: 3rem;
+            font-size: 2rem;
             
         }
         #btn:hover{
@@ -28,15 +28,21 @@
             height: 5rem;
             font-size: 2rem;
             padding: 20px;
-            
-            
-        }
+            }
 
+            @media screen and (max-width:576px) {
+                #message{
+                    height: 15rem;
+                }
+            }
+
+         
     </style>
 </head>
 <body >
     
-    <p id="message" class=" m-0-auto">Click this button</p>
+    <p id="message" class="flex mx-auto my-10 text-white bg-blue-500
+     rounded-lg w-[60%]  h-20 text-2xl p-20  ">Click this button</p>
     <button id="btn">Generate motivation</button>
 
 
