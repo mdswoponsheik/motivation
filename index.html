@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>motivation</title>
+    <style>
+        #btn{
+            display: flex;
+            margin: 40px auto;
+            color: rgb(29, 20, 21);
+            background-color: aqua;
+            border-radius: 8px;
+            height: 4rem;
+            font-size: 3rem;
+            
+        }
+        #btn:hover{
+            background-color: blue;
+        }
+        #message{
+            display: flex;
+            margin: 40px auto;
+            color: rgb(255, 255, 255);
+            background-color: rgb(131, 29, 226);
+            border-radius: 8px;
+            width: 60%;
+            height: 5rem;
+            font-size: 2rem;
+            padding: 20px;
+            
+            
+        }
+
+    </style>
+</head>
+<body >
+    
+    <p id="message" class=" m-0-auto">Click this button</p>
+    <button id="btn">Generate motivation</button>
+
+
+    <script>
+
+            let button = document.getElementById('btn');
+            let message = document.getElementById('message')
+
+
+        let messages = ['Create Value: Every line of code brings you closer to building real-world solutions that help people.', 
+            'Embrace Bugs: Debugging isnt failure it is proof you are learning and moving closer to success', 
+            'Consistent Growth: Daily practice, even just 30 minutes, turns beginners into professionals faster than raw talent.', 
+            'Shape the Future: You have the power to create digital experiences that shape how people interact with the world.', 
+            'Freedom & Flexibility: The ability to work from anywhere, freelancing or full-time, empowers you to design your own lifestyle.'
+
+            ];
+
+        const result = btn.addEventListener("click", function(){
+            let motivation = Math.floor(Math.random( )* messages.length);
+
+            message.innerText = messages[motivation];
+
+        })
+
+    </script>
+</body>
+</html>
